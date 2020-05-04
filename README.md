@@ -1,1 +1,1 @@
-# SchoolMngr.Service.Student
+# SchoolMngr.Services.Student
