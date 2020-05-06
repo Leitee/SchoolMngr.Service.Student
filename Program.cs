@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace SchoolMngr.Service.Student
+namespace SchoolMngr.Services.Academe
 {
     public class Program
     {
