@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Northwind.Application.Products.Queries.GetProductsFile;
 
-namespace Northwind.Application.Common.Interfaces
+namespace SchoolMngr.Services.Academe.Application.Common.Abstractions
 {
     public interface ICsvFileBuilder
     {

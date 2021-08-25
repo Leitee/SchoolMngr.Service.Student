@@ -1,10 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>$(NetStandardTargetVersion)</TargetFramework>
-    <LangVersion>$(LangTargetVersion)</LangVersion>
-  </PropertyGroup>
-
   <ItemGroup>
     <Folder Include="Exceptions\" />
   </ItemGroup>

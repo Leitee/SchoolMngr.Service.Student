@@ -1,7 +1,7 @@
 ﻿using SchoolMngr.Services.Academe.Application.Common.Models;
 using System.Threading.Tasks;
 
-namespace Northwind.Application.Common.Interfaces
+namespace SchoolMngr.Services.Academe.Application.Common.Abstractions
 {
     public interface IUserManager
     {

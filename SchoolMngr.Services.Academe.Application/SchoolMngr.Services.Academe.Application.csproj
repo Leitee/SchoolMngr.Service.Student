@@ -1,9 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>$(NetStandardTargetVersion)</TargetFramework>
-    <LangVersion>$(LangTargetVersion)</LangVersion>
-  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Common\Abstractions\ICsvFileBuilder.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
@@ -15,6 +14,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SchoolMngr.Services.Academe.Domain\SchoolMngr.Services.Academe.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Student\Commands\" />
   </ItemGroup>
 
 </Project>

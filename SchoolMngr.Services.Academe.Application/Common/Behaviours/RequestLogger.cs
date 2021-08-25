@@ -1,6 +1,6 @@
 ﻿using MediatR.Pipeline;
 using Microsoft.Extensions.Logging;
-using Northwind.Application.Common.Interfaces;
+using SchoolMngr.Services.Academe.Application.Common.Abstractions;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -21,7 +21,7 @@ namespace SchoolMngr.Services.Academe.Application.Common.Behaviours
         {
             var name = typeof(TRequest).Name;
 
-            _logger.LogInformation("Northwind Request: {Name} {@UserId} {@Request}",
+            _logger.LogInformation("SchoolMngr Request: {Name} {@UserId} {@Request}",
                 name, _currentUserService.UserId, request);
 
             return Task.CompletedTask;

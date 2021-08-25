@@ -1,7 +1,6 @@
 <Project>  
   <PropertyGroup Label="SDK and Lang Versions">
-    <NetStandardTargetVersion>netstandard2.1</NetStandardTargetVersion>
-    <NetCoreTargetVersion>net5.0</NetCoreTargetVersion>
+    <TargetFramework>net5.0</TargetFramework>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   

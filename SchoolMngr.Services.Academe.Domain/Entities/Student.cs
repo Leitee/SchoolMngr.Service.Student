@@ -18,7 +18,7 @@
 
         public bool Deleted { get; set; }
 
-        public virtual Guid IdentityUserId { get; set; }
+        public Guid IdentityUserId { get; set; }
 
         public virtual ICollection<Status> Statuses { get; set; }
     }

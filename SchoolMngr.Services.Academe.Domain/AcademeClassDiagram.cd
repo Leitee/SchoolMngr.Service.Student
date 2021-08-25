@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SchoolMngr.Services.Academe.Domain.Entities.Attend">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAgAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Attend.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SchoolMngr.Services.Academe.Domain.Entities.Enrollment">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAUAAAAAAAAIAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Entities\Enrollment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SchoolMngr.Services.Academe.Domain.Entities.Exam">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAgAgAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Exam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SchoolMngr.Services.Academe.Domain.Entities.Record">
+    <Position X="2.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAACAAAAAAAAAAAAhAAQAAAACAAAA=</HashCode>
+      <FileName>Entities\Record.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SchoolMngr.Services.Academe.Domain.Entities.Status">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAABAAAAAAAAAGAEA=</HashCode>
+      <FileName>Entities\Status.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SchoolMngr.Services.Academe.Domain.Entities.Student" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAEAAAAAgAIAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Entities\Student.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SchoolMngr.Services.Academe.Domain.Entities.Subject" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAEAQAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Entities\Subject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

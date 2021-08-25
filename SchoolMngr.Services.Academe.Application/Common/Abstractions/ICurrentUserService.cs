@@ -1,4 +1,4 @@
-﻿namespace Northwind.Application.Common.Interfaces
+﻿namespace SchoolMngr.Services.Academe.Application.Common.Abstractions
 {
     public interface ICurrentUserService
     {

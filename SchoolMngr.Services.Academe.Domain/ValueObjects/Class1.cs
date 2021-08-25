@@ -9,7 +9,8 @@ namespace SchoolMngr.Services.Academe.Domain.ValueObjects
     {
         protected override IEnumerable<object> GetAtomicValues()
         {
-            throw new NotImplementedException();
+            yield return null;
+            yield return null;
         }
     }
 }

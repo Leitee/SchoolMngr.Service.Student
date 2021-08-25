@@ -1,6 +1,6 @@
 ﻿using MediatR;
 using Microsoft.Extensions.Logging;
-using Northwind.Application.Common.Interfaces;
+using SchoolMngr.Services.Academe.Application.Common.Abstractions;
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
@@ -33,7 +33,7 @@ namespace SchoolMngr.Services.Academe.Application.Common.Behaviours
             {
                 var name = typeof(TRequest).Name;
 
-                _logger.LogWarning("Northwind Long Running Request: {Name} ({ElapsedMilliseconds} milliseconds) {@UserId} {@Request}",
+                _logger.LogWarning("SchoolMngr Long Running Request: {Name} ({ElapsedMilliseconds} milliseconds) {@UserId} {@Request}",
                     name, _timer.ElapsedMilliseconds, _currentUserService.UserId, request);
             }
 
