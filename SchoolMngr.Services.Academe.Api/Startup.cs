@@ -26,6 +26,9 @@ namespace SchoolMngr.Services.Academe
 
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.Configure<AppSettings>(Configuration);
+
             services.AddApplication();
             services.AddPersistence("DALSection");
             //services.AddInfrastructure(Configuration, Environment);

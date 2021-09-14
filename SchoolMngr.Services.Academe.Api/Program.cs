@@ -16,6 +16,8 @@ namespace SchoolMngr.Services.Academe
 
         public static void Main(string[] args)
         {
+            CreateHostBuilder(args).Build().Run();
+/*
             Log.Logger = SharedHostConfiguration.CreateSerilogLogger(_appName);
 
             try
@@ -54,7 +56,14 @@ namespace SchoolMngr.Services.Academe
             finally
             {
                 Log.CloseAndFlush();
-            }
+            }*/
         }
+
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                });
     }
 }

@@ -13,6 +13,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolMngr.Services.Academe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolMngr.Services.Academe.Infrastructure", "SchoolMngr.Services.Academe.Infrastructure\SchoolMngr.Services.Academe.Infrastructure.csproj", "{FBBCEE6F-3671-4868-912B-E640C07A9A2B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0CD28CE0-8691-45F5-A7D2-8DA17F2AF06F}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		Dockerfile = Dockerfile
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{E3BD1528-B91C-4AC8-8E1B-6CC83C917997}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +53,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D8139A45-3C36-49B6-BB1D-831372B9C981} = {E3BD1528-B91C-4AC8-8E1B-6CC83C917997}
+		{1D5BD356-4A97-40C3-9D18-CA9744178CA8} = {E3BD1528-B91C-4AC8-8E1B-6CC83C917997}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1F9E3911-E16E-41BC-8002-8FAE8963783B}

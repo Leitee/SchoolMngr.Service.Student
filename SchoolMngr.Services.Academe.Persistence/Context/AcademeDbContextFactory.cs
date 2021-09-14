@@ -11,6 +11,11 @@
         {
         }
 
+        //public AcademeDbContextFactory() : base(new DALSettings())
+        //{
+
+        //}
+
         protected override AcademeDbContext CreateNewInstance(DbContextOptions<AcademeDbContext> options)
         {
             return new AcademeDbContext(options);

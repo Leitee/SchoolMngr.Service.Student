@@ -10,7 +10,7 @@
 
   <PropertyGroup Label="Global Package Versions">
     <SchoolMngrSharedPackage>0.4.2</SchoolMngrSharedPackage>
-    <EntityFrameworkAllPackageVersion>5.0.7</EntityFrameworkAllPackageVersion>
+    <EFVersion>5.0.9</EFVersion>
     <MicrosoftExtensionsConfigurationAllPackageVersion>5.0.0</MicrosoftExtensionsConfigurationAllPackageVersion>
   </PropertyGroup>
   
