@@ -30,7 +30,7 @@ namespace SchoolMngr.Services.Academe
             services.Configure<AppSettings>(Configuration);
 
             services.AddApplication();
-            services.AddPersistence("DALSection");
+            services.AddPersistence("DalSection");
             //services.AddInfrastructure(Configuration, Environment);
 
             //services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

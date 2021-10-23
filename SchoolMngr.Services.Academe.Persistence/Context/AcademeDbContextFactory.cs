@@ -7,14 +7,9 @@
 
     public class AcademeDbContextFactory : DesignTimeDbContextFactoryBase<AcademeDbContext>
     {
-        public AcademeDbContextFactory(DALSettings settings) : base(settings)
+        public AcademeDbContextFactory() : base(SharedHostConfiguration.BuildDefaultSettings())
         {
         }
-
-        //public AcademeDbContextFactory() : base(new DALSettings())
-        //{
-
-        //}
 
         protected override AcademeDbContext CreateNewInstance(DbContextOptions<AcademeDbContext> options)
         {
