@@ -10,10 +10,11 @@ namespace SchoolMngr.Services.Academe
     using Microsoft.Extensions.Hosting;
     using Microsoft.OpenApi.Models;
     using SchoolMngr.Services.Academe.Application;
-    using SchoolMngr.Services.Academe.Persistence;
-    using SchoolMngr.Services.Academe.Persistence.Context;
+    using SchoolMngr.Services.Academe.Application.Common.Abstractions;
+    using SchoolMngr.Services.Academe.Infrastructure;
+    using SchoolMngr.Services.Academe.Infrastructure.Persistence.Context;
+    using SchoolMngr.Services.Academe.Services;
     using Serilog;
-    using System;
 
     public class Startup
     {
@@ -57,6 +58,9 @@ namespace SchoolMngr.Services.Academe
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "SchoolMngr.Academe", Version = "v1" });
             });
+
+            services.AddSingleton<ICurrentUserService, CurrentUserService>();
+            services.AddHttpContextAccessor();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

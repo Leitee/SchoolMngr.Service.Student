@@ -1,10 +1,10 @@
-﻿namespace SchoolMngr.Services.Academe.Persistence
+﻿namespace SchoolMngr.Services.Academe.Infrastructure
 {
     using Codeit.NetStdLibrary.Base.DataAccess;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using SchoolMngr.Services.Academe.Application.Common.Abstractions;
-    using SchoolMngr.Services.Academe.Persistence.Context;
+    using SchoolMngr.Services.Academe.Infrastructure.Persistence.Context;
     using System;
 
     public static class DependencyInjection

@@ -5,7 +5,7 @@
 export interface Student
 {
 	profileId: string;
-	adress: string;
+	address: string;
 	deleted: boolean;
 	identityUserId: string;
 	lastValidStatus: string;
@@ -20,7 +20,7 @@ declare enum ExamTypeEnum {
 declare enum AttendanceEnum {
 	ATTENDED = 1,
 	MISSED = 2,
-	REASON = 3
+	REASONED = 3
 }
 declare enum SchoolRolesEnum {
 	ADMINISTRADOR = 1,

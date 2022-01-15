@@ -10,6 +10,6 @@ namespace SchoolMngr.Services.Academe.Entities.Enums
         [Description("Ausente")]
         MISSED,
         [Description("Justificado")]
-        REASON,
+        REASONED,
     }
 }

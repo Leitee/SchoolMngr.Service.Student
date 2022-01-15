@@ -1,5 +1,5 @@
 ﻿
-namespace SchoolMngr.Services.Academe.Persistence.Context
+namespace SchoolMngr.Services.Academe.Infrastructure.Persistence.Context
 {
     using Codeit.NetStdLibrary.Base.Abstractions.DataAccess;
     using Codeit.NetStdLibrary.Base.DataAccess;

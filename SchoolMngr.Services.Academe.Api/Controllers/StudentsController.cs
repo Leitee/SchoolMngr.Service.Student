@@ -7,18 +7,30 @@ namespace SchoolMngr.Services.Academe.Controllers
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Logging;
     using SchoolMngr.Services.Academe.Application.Student.Models;
+    using SchoolMngr.Services.Academe.Application.Student.Queries;
     using SchoolMngr.Services.Academe.Application.Student.Queries.GetStudentsList;
+    using System;
     using System.Threading;
     using System.Threading.Tasks;
 
-    public class StudentController : BaseController<StudentController>
+    public class StudentsController : BaseController<StudentsController>
     {
-        public StudentController(ILoggerFactory loggerFactory) : base(loggerFactory)
+        public StudentsController(ILoggerFactory loggerFactory) : base(loggerFactory)
         {
 
         }
 
-        // GET: api/<ProductsController>
+        // GET: api/students
+        [HttpGet("{id}")]
+        [AllowAnonymous]
+        [ProducesDefaultResponseType(typeof(IBLSingleResponse<StudentDto>))]
+        public async Task<IActionResult> GetById(Guid id, CancellationToken cancellationToken)
+        {
+            var response = await Mediator.Send(new GetStudentByIdQuery {Id = id }, cancellationToken);
+            return response.ToHttpResponse();
+        }
+
+        // GET: api/students/{id}
         [HttpGet]
         [AllowAnonymous]
         [ProducesDefaultResponseType(typeof(IBLListResponse<StudentDto>))]

@@ -1,4 +1,4 @@
-﻿namespace SchoolMngr.Services.Academe.Application.Student.Queries.GetStudentsList
+﻿namespace SchoolMngr.Services.Academe.Application.Student.Queries
 {
     using AutoMapper;
     using AutoMapper.QueryableExtensions;
@@ -25,7 +25,8 @@
 
         public async Task<IBLListResponse<StudentDto>> Handle(GetStudentsListQuery request, CancellationToken cancellationToken)
         {
-            var students = await _context.Subjects
+            var students = await _context.Students
+                .Include(x => x.Statuses)
                 .ProjectTo<StudentDto>(_mapper.ConfigurationProvider)
                 .OrderBy(p => p.ProfileId)
                 .ToListAsync(cancellationToken);

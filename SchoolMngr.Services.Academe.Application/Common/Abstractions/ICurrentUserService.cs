@@ -4,6 +4,6 @@
     {
         string UserId { get; }
 
-        bool IsAuthenticated { get; }
+        //bool IsAuthenticated { get; }
     }
 }

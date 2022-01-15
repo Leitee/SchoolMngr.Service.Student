@@ -14,19 +14,19 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.11.1" />
-    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="5.0.9" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="5.0.11" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
     <PackageReference Include="Serilog.AspNetCore" Version="4.1.0" />
     <PackageReference Include="Serilog.Sinks.Async" Version="1.5.0" />
     <PackageReference Include="Serilog.Sinks.Console" Version="4.0.0" />
-    <PackageReference Include="Serilog.Exceptions" Version="7.0.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.5" />
+    <PackageReference Include="Serilog.Exceptions" Version="7.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.2" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.11" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\SchoolMngr.Services.Academe.Infrastructure\SchoolMngr.Services.Academe.Infrastructure.csproj" />
-    <ProjectReference Include="..\SchoolMngr.Services.Academe.Persistence\SchoolMngr.Services.Academe.Persistence.csproj" />
   </ItemGroup>
 
   <ItemGroup>

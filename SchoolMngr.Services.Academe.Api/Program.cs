@@ -1,12 +1,17 @@
 
 namespace SchoolMngr.Services.Academe
 {
+    using Codeit.NetStdLibrary.Base.Identity;
     using Microsoft.AspNetCore.Hosting;
+    using Microsoft.AspNetCore.Identity;
+    using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
     using Microsoft.Extensions.Logging;
     using SchoolMngr.Infrastructure.Shared.Configuration;
     using SchoolMngr.Services.Academe.Application.Common.Abstractions;
+    using SchoolMngr.Services.Academe.Infrastructure.Persistence.Context;
+    using SchoolMngr.Services.Backoffice.DAL.Context;
     using Serilog;
     using System;
 
@@ -16,8 +21,8 @@ namespace SchoolMngr.Services.Academe
 
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
-/*
+            //CreateHostBuilder(args).Build().Run();
+
             Log.Logger = SharedHostConfiguration.CreateSerilogLogger(_appName);
 
             try
@@ -36,8 +41,12 @@ namespace SchoolMngr.Services.Academe
 
                     try
                     {
-                        //var trainersContext = services.GetRequiredService<IAcademeDbContext>();
-                        //trainersContext.TrySeedAll();
+                        var context = services.GetRequiredService<AcademeDbContext>();
+
+                        if (context.Database.IsSqlServer())
+                            context.TryApplyMigration();
+
+                        context.TrySeedAll();
                     }
                     catch (Exception ex)
                     {
@@ -56,7 +65,7 @@ namespace SchoolMngr.Services.Academe
             finally
             {
                 Log.CloseAndFlush();
-            }*/
+            }
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

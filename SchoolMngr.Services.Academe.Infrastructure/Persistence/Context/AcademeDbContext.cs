@@ -1,5 +1,5 @@
 ﻿
-namespace SchoolMngr.Services.Academe.Persistence.Context
+namespace SchoolMngr.Services.Academe.Infrastructure.Persistence.Context
 {
     using Codeit.NetStdLibrary.Base.Abstractions.Common;
     using Codeit.NetStdLibrary.Base.DomainModel;
@@ -19,15 +19,15 @@ namespace SchoolMngr.Services.Academe.Persistence.Context
         {
         }
 
-        //public AcademeDbContext(
-        //    DbContextOptions<AcademeDbContext> options,
-        //    ICurrentUserService currentUserService,
-        //    IDateTime dateTime)
-        //    : base(options)
-        //{
-        //    _currentUserService = currentUserService;
-        //    _dateTime = dateTime;
-        //}
+        public AcademeDbContext(
+            DbContextOptions<AcademeDbContext> options,
+            ICurrentUserService currentUserService,
+            IDateTime dateTime)
+            : base(options)
+        {
+            _currentUserService = currentUserService;
+            _dateTime = dateTime;
+        }
 
         public DbSet<Subject> Subjects { get; set; }
         public DbSet<Student> Students { get; set; }

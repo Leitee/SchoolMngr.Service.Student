@@ -1,5 +1,4 @@
-﻿
-namespace SchoolMngr.Services.Academe.Persistence
+﻿namespace SchoolMngr.Services.Academe.Infrastructure.Persistence.EntitiesConfiguration
 {
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.Metadata.Builders;
