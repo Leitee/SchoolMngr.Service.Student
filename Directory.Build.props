@@ -10,8 +10,8 @@
 
   <PropertyGroup Label="Global Package Versions">
     <SchoolMngrSharedPackage>0.4.2</SchoolMngrSharedPackage>
-    <EFVersion>5.0.11</EFVersion>
-    <MicrosoftExtensionsConfigurationAllPackageVersion>5.0.0</MicrosoftExtensionsConfigurationAllPackageVersion>
+    <EFVersion>6.0.1</EFVersion>
+    <MicrosoftExtensionsConfigurationAllPackageVersion>6.0.0</MicrosoftExtensionsConfigurationAllPackageVersion>
   </PropertyGroup>
   
   <!-- Importing Shared project globally -->
