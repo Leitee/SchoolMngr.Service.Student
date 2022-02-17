@@ -1,8 +1,8 @@
 ﻿
 namespace SchoolMngr.Services.Academe.Infrastructure.Persistence.Context
 {
-    using Codeit.NetStdLibrary.Base.Abstractions.Common;
-    using Codeit.NetStdLibrary.Base.DomainModel;
+    using Codeit.Enterprise.Base.Abstractions.Common;
+    using Codeit.Enterprise.Base.DomainModel;
     using Microsoft.EntityFrameworkCore;
     using SchoolMngr.Services.Academe.Application.Common.Abstractions;
     using SchoolMngr.Services.Academe.Domain.Entities;

@@ -12,8 +12,8 @@ COPY ["microservices/academe/SchoolMngr.Services.Academe.Persistence/SchoolMngr.
 COPY ["microservices/academe/SchoolMngr.Services.Academe.Application/SchoolMngr.Services.Academe.Application.csproj", "microservices/academe/SchoolMngr.Services.Academe.Application/"]
 COPY ["microservices/academe/SchoolMngr.Services.Academe.Domain/SchoolMngr.Services.Academe.Domain.csproj", "microservices/academe/SchoolMngr.Services.Academe.Domain/"]
 COPY ["infrastructure/shared/SchoolMngr.Infrastructure.Shared.csproj", "infrastructure/shared/"]
-COPY ["../../Codeit.NetStdLibrary.Base/Codeit.NetStdLibrary.Base/Codeit.NetStdLibrary.Base.csproj", "../../Codeit.NetStdLibrary.Base/Codeit.NetStdLibrary.Base/"]
-COPY ["../../Codeit.NetStdLibrary.Base/Codeit.NetStdLibrary.Base.Abstractions/Codeit.NetStdLibrary.Base.Abstractions.csproj", "../../Codeit.NetStdLibrary.Base/Codeit.NetStdLibrary.Base.Abstractions/"]
+COPY ["../../Codeit.Enterprise.Base/Codeit.Enterprise.Base/Codeit.Enterprise.Base.csproj", "../../Codeit.Enterprise.Base/Codeit.Enterprise.Base/"]
+COPY ["../../Codeit.Enterprise.Base/Codeit.Enterprise.Base.Abstractions/Codeit.Enterprise.Base.Abstractions.csproj", "../../Codeit.Enterprise.Base/Codeit.Enterprise.Base.Abstractions/"]
 COPY ["microservices/academe/SchoolMngr.Services.Academe.Infrastructure/SchoolMngr.Services.Academe.Infrastructure.csproj", "microservices/academe/SchoolMngr.Services.Academe.Infrastructure/"]
 RUN dotnet restore "microservices/academe/SchoolMngr.Services.Academe.Api/SchoolMngr.Services.Academe.csproj"
 COPY . .

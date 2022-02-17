@@ -1,7 +1,7 @@
 ﻿namespace SchoolMngr.Services.Academe.Domain.Entities
 {
-    using Codeit.NetStdLibrary.Base.Abstractions.DomainModel;
-    using Codeit.NetStdLibrary.Base.DomainModel;
+    using Codeit.Enterprise.Base.Abstractions.DomainModel;
+    using Codeit.Enterprise.Base.DomainModel;
 
     public class Subject : EFEntity, IDeleteableEntity
     {

@@ -1,7 +1,7 @@
 ﻿
 namespace SchoolMngr.Services.Academe.Controllers
 {
-    using Codeit.NetStdLibrary.Base.Application;
+    using Codeit.Enterprise.Base.Application;
     using MediatR;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.DependencyInjection;

@@ -1,6 +1,6 @@
 ﻿namespace SchoolMngr.Services.Academe.Infrastructure
 {
-    using Codeit.NetStdLibrary.Base.DataAccess;
+    using Codeit.Enterprise.Base.DataAccess;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using SchoolMngr.Services.Academe.Application.Common.Abstractions;

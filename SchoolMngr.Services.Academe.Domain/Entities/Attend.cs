@@ -1,7 +1,7 @@
 ﻿
 namespace SchoolMngr.Services.Academe.Domain.Entities
 {
-    using Codeit.NetStdLibrary.Base.DomainModel;
+    using Codeit.Enterprise.Base.DomainModel;
     using SchoolMngr.Services.Academe.Entities.Enums;
     using System;
 

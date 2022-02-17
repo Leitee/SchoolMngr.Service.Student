@@ -2,8 +2,8 @@
 {
     using AutoMapper;
     using AutoMapper.QueryableExtensions;
-    using Codeit.NetStdLibrary.Base.Abstractions.BusinessLogic;
-    using Codeit.NetStdLibrary.Base.BusinessLogic;
+    using Codeit.Enterprise.Base.Abstractions.BusinessLogic;
+    using Codeit.Enterprise.Base.BusinessLogic;
     using MediatR;
     using Microsoft.EntityFrameworkCore;
     using SchoolMngr.Services.Academe.Application.Common.Abstractions;

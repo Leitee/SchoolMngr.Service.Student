@@ -1,7 +1,7 @@
 ﻿namespace SchoolMngr.Services.Academe.Application.Student.Models
 {
     using AutoMapper;
-    using Codeit.NetStdLibrary.Base.BusinessLogic;
+    using Codeit.Enterprise.Base.BusinessLogic;
     using SchoolMngr.Services.Academe.Application.Common.Mappings;
     using SchoolMngr.Services.Academe.Domain.Entities;
     using System;

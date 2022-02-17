@@ -1,7 +1,7 @@
 
 namespace SchoolMngr.Services.Academe
 {
-    using Codeit.NetStdLibrary.Base.Identity;
+    using Codeit.Enterprise.Base.Identity;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.EntityFrameworkCore;
